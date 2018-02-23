@@ -28,7 +28,7 @@ public class ZebraBluetoothPrinter extends CordovaPlugin {
 
         if (action.equals("print")) {
             try {
-            	//mac = args.getString(0);
+            	mac = args.getString(1);
                 String msg = args.getString(0);
                 if(msg.startsWith("PRINTMAC")) {
             	
