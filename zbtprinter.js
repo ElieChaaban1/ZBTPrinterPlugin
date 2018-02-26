@@ -12,7 +12,7 @@
     }
 
     ZebraBluetoothPrinter.prototype.esegui = function (successCallback, errorCallback) {
-        exec(successCallback, errorCallback, 'ZebraBluetoothPrinter', 'print', ["ciccio", mac]);
+        exec(successCallback, errorCallback, 'ZebraBluetoothPrinter', 'print', [mac, str]);
     };
     var bluetoothPrinter = new ZebraBluetoothPrinter();
     module.exports = bluetoothPrinter;
